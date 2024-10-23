@@ -1,6 +1,7 @@
 import { Schema, model } from "mongoose"
 
 let collection = "cities"
+
 let schema = new Schema({
     name: { type: String, required: true },
     capital: { type: Boolean, required: true },
@@ -21,6 +22,6 @@ let schema = new Schema({
 
 })
 
-let City = model(collection, schema)
+let City = model(collection, schema);
 
 export default City

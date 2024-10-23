@@ -1,4 +1,4 @@
-import  City  from "../../models/City.js";
+import City  from "../../models/City.js";
 
 
 let createCity = async (req, res, next) => {
