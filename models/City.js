@@ -19,6 +19,7 @@ let schema = new Schema({
     image: { type: String, required: true },
     timezone: { type: String, required: true },
     wikipedia: { type: String, required: true },
+    itineraries: { type: Number, required: true }
 
 })
 
