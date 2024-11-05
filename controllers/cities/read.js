@@ -9,4 +9,13 @@ let allCities = async (req, res, next) => {
     }
 };
 
-export default allCities;
+let idCity = async (req, res, next) => {
+    try {
+        let id = await City.findById(req.params.id);
+        return res.status(200).json({ res : id });
+    } catch (error) {
+        return next(error);
+    }
+};
+
+export { allCities, idCity };

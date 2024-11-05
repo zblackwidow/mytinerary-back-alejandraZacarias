@@ -15,7 +15,7 @@ let schema = new Schema({
     imageFlag: { type: String, required: true },
     continent: { type: String, required: true },
     languages: { type: String, required: true },
-    descripsion: { type: String, required: true },
+    descripcion: { type: String, required: true },
     image: { type: String, required: true },
     timezone: { type: String, required: true },
     wikipedia: { type: String, required: true },

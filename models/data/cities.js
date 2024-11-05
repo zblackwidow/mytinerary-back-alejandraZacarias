@@ -17,10 +17,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
         continent: "North America",
         languages: "English",
-        descripsion: "The largest city in the United States, New York is located on the East Coast of the United States. It is the most populous city in the United States and the most populous city in the world. It is the center of the New York metropolitan area, which is the largest metropolitan area in the United States.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/New_York_City_New_York.svg/1200px-New_York_City_New_York.svg.png",
+        descripcion: "The city that never sleeps, famous for its skyscrapers, Broadway, museums, and cultural diversity.",
+        image: "https://media.admagazine.com/photos/61e5acc706c10ae95c71b902/16:9/w_2560%2Cc_limit/New-York-skyline.jpg",
         timezone: "America/New_York",
-        wikipedia: "https://en.wikipedia.org/wiki/New_York_City"
+        wikipedia: "https://en.wikipedia.org/wiki/New_York_City",
+        itineraries: 2
     }, {
         id: 2,
         name: "Barcelona",
@@ -35,10 +36,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png",
         continent: "Europe",
         languages: "Catalan, Spanish",
-        descripsion: "Barcelona is the capital and most populous city of Spain. It is located in the north-eastern corner of the Iberian Peninsula, on the coast of the Mediterranean Sea, at the mouth of the river Ebro. It is the second most populous city in Europe after London, and the most populous in Spain.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Barcelona_Capital_-_panoramio.jpg/1200px-Barcelona_Capital_-_panoramio.jpg",
+        descripcion: "Known for its unique Gaudí architecture, beaches and a rich cultural and gastronomic life.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZhG6NwwlPfqeZXadLK1XzXyCmJKWNkR_MSw&s",
         timezone: "Europe/Madrid",
-        wikipedia: "https://en.wikipedia.org/wiki/Barcelona"
+        wikipedia: "https://en.wikipedia.org/wiki/Barcelona",
+        itineraries: 5
     }, {
         id: 3,
         name: "Tokyo",
@@ -53,10 +55,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
         continent: "Asia",
         languages: "Japanese",
-        descripsion: "Tokyo is the capital and most populous city of Japan. It is located in the north-eastern corner of the Japanese archipelago, on the Pacific Ocean, at the mouth of the Seto Inland Sea. It is the most populous city in the world and the second most populous city in the world after Beijing.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "A vibrant metropolis that combines tradition and modernity, famous for its gastronomy, technology and pop culture.",
+        image: "https://media.admagazine.com/photos/618a5ef1be961b98e9f09804/master/w_1600%2Cc_limit/91686.jpg",
         timezone: "Asia/Tokyo",
-        wikipedia: "https://en.wikipedia.org/wiki/Tokyo"
+        wikipedia: "https://en.wikipedia.org/wiki/Tokyo",
+        itineraries: 0
     },
     {
         id: 4,
@@ -72,10 +75,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_France.svg/1200px-Flag_of_France.svg.png",
         continent: "Europe",
         languages: "French",
-        descripsion: "Paris is the capital and most populous city of France. It is located in the north-western corner of the European continent, on the Seine River, at the mouth of the Marne River. It is the second most populous city in the world and the most populous city in Europe.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Paris_-_Panoramio.jpg/1200px-Paris_-_Panoramio.jpg",
+        descripcion: "The city of love, known for its iconic monuments, art and exquisite gastronomy.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbo-vIfVjh-kezUFRNpSwrrkNFikeVEF1WQ&s",
         timezone: "Europe/Paris",
-        wikipedia: "https://en.wikipedia.org/wiki/Paris"
+        wikipedia: "https://en.wikipedia.org/wiki/Paris",
+        itineraries: 3
     }, {
         id: 5,
         name: "Sydney",
@@ -90,10 +94,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Australia.svg/1200px-Flag_of_Australia.svg.png",
         continent: "Oceania",
         languages: "English",
-        descripsion: "Sydney is the capital and most populous city of Australia. It is located in the north-western corner of the Australian continent, on the Southern Ocean, at the mouth of the Cook Inlet. It is the most populous city in the world and the second most populous city in Oceania.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Sydney_Ocean_City_-_panoramio.jpg/1200px-Sydney_Ocean_City_-_panoramio.jpg",
+        descripcion: "Famous for its Opera and beautiful beaches, Sydney offers a mix of nature and urban life.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkRphk1lpOJChnm27I3cTcErJs2lBvluv8Dw&s",
         timezone: "Australia/Sydney",
-        wikipedia: "https://en.wikipedia.org/wiki/Sydney"
+        wikipedia: "https://en.wikipedia.org/wiki/Sydney",
+        itineraries: 1
     }, {
         id: 6,
         name: "Kioto",
@@ -108,10 +113,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
         continent: "Asia",
         languages: "Japanese",
-        descripsion: "Kioto is the capital and most populous city of Japan. It is located in the north-eastern corner of the Japanese archipelago, on the Pacific Ocean, at the mouth of the Seto Inland Sea. It is the most populous city in the world and the second most populous city in the world after Beijing.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "A historical city known for its temples, traditional gardens, and Japanese culture.",
+        image: "https://estaticos-cdn.prensaiberica.es/clip/a1767182-90e0-402e-9f29-e29ac48a2e7c_alta-aspect-ratio_default_0.jpg",
         timezone: "Asia/Tokyo",
-        wikipedia: "https://en.wikipedia.org/wiki/Tokyo"
+        wikipedia: "https://en.wikipedia.org/wiki/Tokyo",
+        itineraries: 4
     }, {
         id: 7,
         name: "Cape Town",
@@ -123,13 +129,14 @@ let cities = [
         population: 1000000,
         currency: "Rand",
         flag: "🇿🇦",
-        imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_South_Africa.svg/1200px-Flag_of_South_Africa.svg.png",
+        imageFlag: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/1e/cape-town.jpg?w=1200&h=700&s=1",
         continent: "Africa",
         languages: "Afrikaans",
-        descripsion: "Cape Town is the capital and most populous city of South Africa. It is located in the southernmost tip of the African continent, on the Indian Ocean, at the mouth of the Orange River. It is the most populous city in the world and the second most populous city in Africa.",
+        descripcion: "With views of the Mesa mountain, it offers a mix of history, culture and nature.",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cape_Town_-_panoramio.jpg/1200px-Cape_Town_-_panoramio.jpg",
         timezone: "Africa/Johannesburg",
-        wikipedia: "https://en.wikipedia.org/wiki/Cape_Town"
+        wikipedia: "https://en.wikipedia.org/wiki/Cape_Town",
+        itineraries: 2
     },
     {
         id: 8,
@@ -145,10 +152,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Iceland.svg/1200px-Flag_of_Iceland.svg.png",
         continent: "Europe",
         languages: "Icelandic",
-        descripsion: "Reykjavik is the capital and most populous city of Iceland. It is located in the north-western corner of the European continent, on the North Atlantic Ocean, at the mouth of the Gulf of Bothnia. It is the most populous city in the world and the second most populous city in Europe.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Sydney_Ocean_City_-_panoramio.jpg/1200px-Sydney_Ocean_City_-_panoramio.jpg",
+        descripcion: "The northernmost capital in the world, famous for its natural landscapes and vibrant culture.",
+        image: "https://content.icelandtravel.is/wp-content/uploads/2019/03/Reykjavik.jpg",
         timezone: "Europe/Reykjavik",
-        wikipedia: "https://en.wikipedia.org/wiki/Reykjavik"
+        wikipedia: "https://en.wikipedia.org/wiki/Reykjavik",
+        itineraries: 0
     }, {
         id: 9,
         name: "Lima",
@@ -163,10 +171,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/1200px-Flag_of_Peru.svg.png",
         continent: "South America",
         languages: "Spanish",
-        descripsion: "Lima is the capital and most populous city of Peru. It is located in the south-eastern corner of the South American continent, on the Pacific Ocean, at the mouth of the Amazon River. It is the most populous city in the world and the second most populous city in South America.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "LKnown for its world-class gastronomy and rich colonial history. The best destination to enjoy.",
+        image: "https://www.clarin.com/2022/12/02/Kl5Kzlrvm_2000x1500__1.jpg",
         timezone: "America/Lima",
-        wikipedia: "https://en.wikipedia.org/wiki/Lima"
+        wikipedia: "https://en.wikipedia.org/wiki/Lima",
+        itineraries: 5
     }, {
         id: 10,
         name: "Berlin",
@@ -181,10 +190,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png",
         continent: "Europe",
         languages: "German",
-        descripsion: "Berlin is the capital and most populous city of Germany. It is located in the north-western corner of the European continent, on the Baltic Sea, at the mouth of the Elbe River. It is the most populous city in the world and the second most populous city in Europe.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "A city with a rich history, contemporary art and a vibrant nightlife.",
+        image: "https://viajes.nationalgeographic.com.es/medio/2017/02/09/shutterstock-302415089_6b607cdb.jpg",
         timezone: "Europe/Berlin",
-        wikipedia: "https://en.wikipedia.org/wiki/Berlin"
+        wikipedia: "https://en.wikipedia.org/wiki/Berlin",
+        itineraries: 1
     }, {
         id: 11,
         name: "Copenhagen",
@@ -199,10 +209,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Denmark.svg/1200px-Flag_of_Denmark.svg.png",
         continent: "Europe",
         languages: "Danish",
-        descripsion: "Copenhagen is the capital and most populous city of Denmark. It is located in the north-western corner of the European continent, on the Baltic Sea, at the mouth of the Kattegat. It is the most populous city in the world and the second most populous city in Europe.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "Known for its Scandinavian design, canals and cozy atmosphere.The best destination.",
+        image: "https://www.civitatis.com/blog/wp-content/uploads/2019/09/shutterstock_378539728-1920x1280.jpg",
         timezone: "Europe/Copenhagen",
-        wikipedia: "https://en.wikipedia.org/wiki/Copenhagen"
+        wikipedia: "https://en.wikipedia.org/wiki/Copenhagen",
+        itineraries: 3
     }, {
         id: 12,
         name: "Buenos Aires",
@@ -217,10 +228,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png",
         continent: "South America",
         languages: "Spanish",
-        descripsion: "Buenos Aires is the capital and most populous city of Argentina. It is located in the south-eastern corner of the South American continent, on the Pacific Ocean, at the mouth of the Paraná River. It is the most populous city in the world and the second most populous city in South America.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "Famous for its tango culture, European architecture and delicious gastronomy.",
+        image: "https://blogskystorage.s3.amazonaws.com/2021/07/skyairline_skyairline_image_182.jpeg",
         timezone: "America/Buenos_Aires",
-        wikipedia: "https://en.wikipedia.org/wiki/Buenos_Aires"
+        wikipedia: "https://en.wikipedia.org/wiki/Buenos_Aires",
+        itineraries: 0
     },
     {
         id: 13,
@@ -236,10 +248,11 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png",
         continent: "South America",
         languages: "Spanish",
-        descripsion: "Cordoba is the capital and most populous city of Argentina. It is located in the south-eastern corner of the South American continent, on the Pacific Ocean, at the mouth of the Paraná River. It is the most populous city in the world and the second most populous city in South America.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "Cordoba is the capital and most populous city of Argentina.",
+        image: "https://www.argentinfo.com.ar/wp-content/uploads/2023/08/calamuchita.jpg",
         timezone: "America/Buenos_Aires",
-        wikipedia: "https://en.wikipedia.org/wiki/Buenos_Aires"
+        wikipedia: "https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)",
+        itineraries: 4
     }, {
         id: 14,
         name: "Santiago",
@@ -251,13 +264,14 @@ let cities = [
         population: 1000000,
         currency: "Peso",
         flag: "🇨🇱",
-        imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Chile.svg/1200px-Flag_of_Chile.svg.png",
+        imageFlag: "https://www.argentinfo.com.ar/wp-content/uploads/2023/08/calamuchita.jpg",
         continent: "South America",
         languages: "Spanish",
-        descripsion: "Santiago is the capital and most populous city of Chile. It is located in the south-eastern corner of the South American continent, on the Pacific Ocean, at the mouth of the Paraná River. It is the most populous city in the world and the second most populous city in South America.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "Santiago is the capital and most populous city of Chile. It is the most populous city in the world and the second most populous city in South America.",
+        image: "https://media.brate.com/images/ameryka-poludniowa/chile/santiago/santiago.jpg",
         timezone: "America/Santiago",
-        wikipedia: "https://en.wikipedia.org/wiki/Santiago"
+        wikipedia: "https://en.wikipedia.org/wiki/Santiago",
+        itineraries: 2
     },
     {
         id: 15,
@@ -273,12 +287,10 @@ let cities = [
         imageFlag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Ecuador.svg/1200px-Flag_of_Ecuador.svg.png",
         continent: "South America",
         languages: "Spanish",
-        descripsion: "Quito is the capital and most populous city of Ecuador. It is located in the south-eastern corner of the South American continent, on the Pacific Ocean, at the mouth of the Paraná River. It is the most populous city in the world and the second most populous city in South America.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tokyo-3.jpg/1200px-Tokyo-3.jpg",
+        descripcion: "Quito is the capital and most populous city of Ecuador.",
+        image: "https://ecpe2k7qe53.exactdn.com/wp-content/uploads/2020/01/410A3DA6-3D43-4479-BE3E-7049A99C8132-scaled.jpeg?strip=all&lossy=1&ssl=1",
         timezone: "America/Quito",
-        wikipedia: "https://en.wikipedia.org/wiki/Quito"
+        wikipedia: "https://en.wikipedia.org/wiki/Quito",
+        itineraries: 5
     }]
-
-
-
 City.insertMany(cities)

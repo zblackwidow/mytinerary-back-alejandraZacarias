@@ -5,7 +5,6 @@ let collection = "itineraries"
 let schema = new Schema({
     name: { type: String, required: true },
     activities: { type: Boolean, required: true },
-    country: { type: String, required: true },
     price: { type: Number, required: true },
     Image: { type: String, required: true },
     description: { type: String, required: true },
