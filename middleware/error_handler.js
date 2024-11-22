@@ -1,10 +1,11 @@
-// funcion que va a retornar cuando no encuentre la ruta 
-const error_handler = (error,request, response, next) =>{
-    console.log(error)
+// Handler para errores generales
+const error_handler = (err, request, response, next) => {
+    console.error(err.stack);
     return response.status(500).json({
         success: false,
-        message: 'error al ejecutar la petición'
-    })
+        message: "Algo salió mal en el servidor",
+        error: err.message
+    });
 }
 
-export default error_handler;
+export default error_handler ;

@@ -18,4 +18,13 @@ let idCity = async (req, res, next) => {
     }
 };
 
-export { allCities, idCity };
+let nameCity = async (req, res, next) => {
+    try {
+        let name = await City.findOne({ name: req.params.name });
+        return res.status(200).json({ res : name });
+    } catch (error) {
+        return next(error);
+    }
+};
+
+export { allCities, idCity, nameCity };
