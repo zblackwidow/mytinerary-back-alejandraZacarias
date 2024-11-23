@@ -1,6 +1,6 @@
 import User from "../../models/User.js";
 
-let createUser = async (req, res, next) => {
+let registerUser = async (req, res, next) => {
     try {
         let user = req.body;
         let newUser = await User.create(user);
@@ -10,4 +10,4 @@ let createUser = async (req, res, next) => {
     }
 };
 
-export default createUser;
+export default registerUser;

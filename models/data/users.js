@@ -13,21 +13,21 @@ let users = [
         email: "alejandra.zacarias@gmail.com",
         password: "admin123",
         photo: "https://www.gravatar.com/avatar/a?d=identicon",
-        role: "admin"
+        role: 1
     },
     {
         name: "Carlos Zacarias",
         email: "carlos.zacarias@gmail.com",
         password: "admin123",
         photo: "https://www.gravatar.com/avatar/a?d=identicon",
-        role: "invited"
+        role: 2
     },
     {
         name: "Daniel Zacarias",
         email: "daniel.zacarias@gmail.com",
         password: "admin123",
         photo: "https://www.gravatar.com/avatar/a?d=identicon",
-        role: "invited"
+        role: 3
     }
 ]
 
