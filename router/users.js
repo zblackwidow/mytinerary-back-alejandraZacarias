@@ -10,7 +10,7 @@ import createhash from "../middleware/createhash.js";
 
 let router = Router();
 
-router.post("/register", validator(createUserSchema),accountExist,createhash, registerUser);
+router.post("/register", validator(createUserSchema), accountExist , createhash , registerUser);
 router.get("/all", allUsers);
 router.get("/name/:name", nameUser);
 router.get("/id/:id", idUser);
