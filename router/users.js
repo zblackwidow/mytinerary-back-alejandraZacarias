@@ -7,14 +7,15 @@ import validator from "../middleware/validator.js";
 import createUserSchema from "../schemas/users/create.js";
 import accountExist from "../middleware/accountExist.js";
 import createhash from "../middleware/createhash.js";
+import passport from "../middleware/passport.js";
 
 let router = Router();
 
-router.post("/register", validator(createUserSchema), accountExist , createhash , registerUser);
-router.get("/all", allUsers);
-router.get("/name/:name", nameUser);
-router.get("/id/:id", idUser);
-router.put("/update", updateUser);
-router.delete("/deleteUser", deleteUser);
+router.post("/register", passport.authenticate('jwt', { session: false }), validator(createUserSchema), accountExist, createhash, registerUser);
+router.get("/all", passport.authenticate('jwt', { session: false }), allUsers);
+router.get("/name/:name", passport.authenticate('jwt', { session: false }), nameUser);
+router.get("/id/:id", passport.authenticate('jwt', { session: false }), idUser);
+router.put("/update", passport.authenticate('jwt', { session: false }), updateUser);
+router.delete("/deleteUser", passport.authenticate('jwt', { session: false }), deleteUser);
 
 export default router;

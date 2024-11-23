@@ -1,3 +1,4 @@
+import { token } from "morgan";
 import User from "../../models/User.js";
 
 export default async (req, res, next) => {
@@ -6,7 +7,14 @@ export default async (req, res, next) => {
             { email: req.body.email },
             { online: true }
         )
-        return res.status(200).json({ success: true, message: "Logged in successfully" });
+        return res.status(200).json({ success: true, message: "Logged in successfully",
+            user:{
+                email: req.user.email,
+                role: req.user.role,
+                photo: req.user.photo
+            },
+            token: req.token
+         });
     }
     catch (error) {
             next(error)
