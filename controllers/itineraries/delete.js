@@ -12,10 +12,10 @@ const deleteItinerary = async (request, response, next) => {
             response: deleteItineraryOne
         })
     }
-        catch(error){
-            next(error)
-        }
-
+    catch (error) {
+        next(error)
     }
 
-export {deleteItinerary}
+}
+
+export { deleteItinerary }

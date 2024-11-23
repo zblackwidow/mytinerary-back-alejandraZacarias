@@ -1,13 +1,20 @@
 import User from "../../models/User.js";
 
-const deleteUser = async (req, res, next) => {
+const deleteUser = async (request, response, next) => {
     try {
-        let user = await User.findById({_id:req.params.id})
-        return res.status(200).json({ res: user });
+        let userDelete = await User.deleteOne(
+            {
+                _id: request.body._id
+            }
+        )
+        return response.status(200).json({
+            response: userDelete
+        })
     }
-    catch (error) {
-        return next(error);
-    }
-};
+        catch(error){
+            next(error)
+        }
 
-export {deleteUser};
+    }
+
+export { deleteUser };

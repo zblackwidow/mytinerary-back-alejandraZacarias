@@ -11,7 +11,7 @@ let allItineraries = async (req, res, next) => {
 
     }
 };
-let nameCityItinerary = async (req, res, next) => {
+let nameItinerary = async (req, res, next) => {
     try {
         let name = await Itinerary.findOne({ name: req.params.name });
         return res.status(200).json({ res: name });
@@ -20,5 +20,14 @@ let nameCityItinerary = async (req, res, next) => {
     }
 };
 
+let cityItinerary = async (req, res, next) => {
+    try {
+        let city = await Itinerary.find({ city: req.params.city });
+        return res.status(200).json({ res: city });
+    } catch (error) {
+        return next(error);
+    }
+};
 
-export { allItineraries, nameCityItinerary };
+
+export { allItineraries, nameItinerary, cityItinerary };
