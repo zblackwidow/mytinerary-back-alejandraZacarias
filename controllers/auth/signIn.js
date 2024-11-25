@@ -1,4 +1,3 @@
-import { token } from "morgan";
 import User from "../../models/User.js";
 
 export default async (req, res, next) => {

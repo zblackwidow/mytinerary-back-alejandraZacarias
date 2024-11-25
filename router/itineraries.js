@@ -8,9 +8,9 @@ import passport from "../middleware/passport.js";
 let router = Router();
 
 router.post("/createItinerary", passport.authenticate('jwt', { session: false }), createItinerary);
-router.get("/all", passport.authenticate('jwt', { session: false }), allItineraries);
-router.get("/name/:name", passport.authenticate('jwt', { session: false }), nameItinerary);
-router.get("/city/:city", passport.authenticate('jwt', { session: false }), cityItinerary);
+router.get("/all",  allItineraries);
+router.get("/name/:name",  nameItinerary);
+router.get("/city/:city",  cityItinerary);
 router.put("/update", passport.authenticate('jwt', { session: false }), updateItinerary);
 router.delete("/deleteItinerary", passport.authenticate('jwt', { session: false }), deleteItinerary);
 
