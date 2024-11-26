@@ -11,7 +11,7 @@ import passport from "../middleware/passport.js";
 
 let router = Router();
 
-router.post("/register", passport.authenticate('jwt', { session: false }), validator(createUserSchema), accountExist, createhash, registerUser);
+router.post("/register", validator(createUserSchema), accountExist, createhash, registerUser);
 router.get("/all", passport.authenticate('jwt', { session: false }), allUsers);
 router.get("/name/:name", passport.authenticate('jwt', { session: false }), nameUser);
 router.get("/id/:id", passport.authenticate('jwt', { session: false }), idUser);
